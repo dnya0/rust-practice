@@ -1,0 +1,14 @@
+# Rust 빌드 산출물
+/target/
+
+# Cargo.lock은 라이브러리라면 제외하기도 하지만,
+# 이 저장소는 실행 가능한 예제 프로젝트라 커밋 대상으로 둡니다.
+
+# macOS
+.DS_Store
+
+# 에디터/IDE 로컬 설정
+.idea/
+.vscode/
+*.swp
+*.swo

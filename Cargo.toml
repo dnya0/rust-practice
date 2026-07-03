@@ -1,0 +1,8 @@
+[package]
+name = "rust-syntax-examples"
+version = "0.1.0"
+edition = "2021"
+
+# 외부 크레이트 없이 표준 라이브러리만 사용합니다.
+# Rust 문법 자체를 빠르게 훑는 용도라 의존성을 의도적으로 비워 둡니다.
+[dependencies]
