@@ -32,14 +32,16 @@ brew install rust
 ```bash
 cd rust-syntax-examples
 cargo run --bin 01_basics
-cargo run --bin 02_ownership_borrowing
-cargo run --bin 03_struct_enum_match
-cargo run --bin 04_traits_generics
-cargo run --bin 05_error_handling
+cargo run --bin 02_types
+cargo run --bin 03_macros
+cargo run --bin 04_ownership_borrowing
+cargo run --bin 05_struct_enum_match
 cargo run --bin 06_collections_iterators
-cargo run --bin 07_lifetimes
-cargo run --bin 08_modules_visibility
-cargo run --bin 09_concurrency
+cargo run --bin 07_error_handling
+cargo run --bin 08_traits_generics
+cargo run --bin 09_lifetimes
+cargo run --bin 10_modules_visibility
+cargo run --bin 11_concurrency
 ```
 
 전체 컴파일 확인:
@@ -51,11 +53,13 @@ cargo check
 ## 구성
 
 - `01_basics.rs`: 변수, 타입, 함수, 조건문, 반복문
-- `02_ownership_borrowing.rs`: 소유권, 이동, 복사, 참조, 가변 참조
-- `03_struct_enum_match.rs`: 구조체, enum, `Option`, `match`, `if let`
-- `04_traits_generics.rs`: trait, 제네릭, trait bound
-- `05_error_handling.rs`: `Result`, `?`, 커스텀 에러 타입
+- `02_types.rs`: 정수/실수/문자열/배열/튜플/`Option`/`Result` 등 Rust 자료형
+- `03_macros.rs`: `println!`, `format!`, `vec!`처럼 `!`가 붙는 매크로 문법
+- `04_ownership_borrowing.rs`: 소유권, 이동, 복사, 참조, 가변 참조
+- `05_struct_enum_match.rs`: 구조체, enum, `Option`, `match`, `if let`
 - `06_collections_iterators.rs`: `Vec`, `HashMap`, iterator 체인
-- `07_lifetimes.rs`: lifetime 표기와 참조 반환
-- `08_modules_visibility.rs`: 모듈, 공개 범위, 연관 함수
-- `09_concurrency.rs`: thread, move 클로저, channel, `Arc<Mutex<T>>`
+- `07_error_handling.rs`: `Result`, `?`, 커스텀 에러 타입
+- `08_traits_generics.rs`: trait, 제네릭, trait bound
+- `09_lifetimes.rs`: lifetime 표기와 참조 반환
+- `10_modules_visibility.rs`: 모듈, 공개 범위, 연관 함수
+- `11_concurrency.rs`: thread, move 클로저, channel, `Arc<Mutex<T>>`
